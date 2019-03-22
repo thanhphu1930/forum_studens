@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trang Admin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+             <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Thống kê tất cả</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Người dùng<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Danh sách thành viên</a>
+                                </li>
+                                <li>
+                                    <a href="#">Danh sách thành viên bị khóa</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-table fa-fw"></i>Danh mục</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-edit fa-fw"></i>Danh mục phụ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i>Chủ đề thảo luận</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i>Trả lời chủ đề</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Thống kê</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+                <!-- .col-lg-12 -->
+               <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Tổng thống kê
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-bar-chart" style="position: relative;"><svg height="342" version="1.1" width="558" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.799988px; top: -0.400002px;"><desc>Created with Raphaël 2.2.0</desc><defs></defs>
+		<text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="34.10000038146973" y="307.800012588501" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
+		<tspan dy="4.000006675720215">0</tspan>
+		</text>
+		<path style="" fill="none" stroke="#aaaaaa" d="M46.60000038146973,307.800012588501H532.5999755859375" stroke-width="0.5"></path>
+		<text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="34.10000038146973" y="237.10000944137573" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
+		<tspan dy="4.000000476837158">25</tspan>
+		</text>
+		<path style="" fill="none" stroke="#aaaaaa" d="M46.60000038146973,237.10000944137573H532.5999755859375" stroke-width="0.5"></path>
+		<text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="34.10000038146973" y="166.4000062942505" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="3.9999942779541016">50</tspan>
+		</text>
+		<path style="" fill="none" stroke="#aaaaaa" d="M46.60000038146973,166.4000062942505H532.5999755859375" stroke-width="0.5"></path>
+		<text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="34.10000038146973" y="95.70000314712524" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal">
+		<tspan dy="3.999995708465576">75</tspan></text><path style="" fill="none" stroke="#aaaaaa" d="M46.60000038146973,95.70000314712524H532.5999755859375" stroke-width="0.5"></path>
+		<text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="34.10000038146973" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4">100</tspan>
+		</text>
+		<path style="" fill="none" stroke="#aaaaaa" d="M46.60000038146973,25H532.5999755859375" stroke-width="0.5"></path>
+		<text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="497.88569164276123" y="320.300012588501" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,7.2)"><tspan dy="4.000006675720215">Tháng 7</tspan>
+		</text>
+		<text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="359.02855587005615" y="320.300012588501" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,7.2)"><tspan dy="4.000006675720215">Tháng 5</tspan>
+		</text>
+		<text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="220.17142009735107" y="320.300012588501" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,7.2)"><tspan dy="4.000006675720215">Tháng 3 </tspan>
+		</text>
+		<text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="81.314284324646" y="320.300012588501" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,7.2)"><tspan dy="4.000006675720215">Tháng 1</tspan>
+		</text>
+		<rect x="55.278571367263794" y="25" width="24.535712957382202" height="282.800012588501" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="82.814284324646" y="53.28000125885009" width="24.535712957382202" height="254.52001132965088" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="124.70713925361633" y="95.70000314712524" width="24.535712957382202" height="212.10000944137573" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="152.24285221099854" y="123.98000440597534" width="24.535712957382202" height="183.82000818252564" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="194.13570713996887" y="166.4000062942505" width="24.535712957382202" height="141.4000062942505" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="221.67142009735107" y="194.68000755310058" width="24.535712957382202" height="113.1200050354004" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="263.5642750263214" y="95.70000314712524" width="24.535712957382202" height="212.10000944137573" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="291.0999879837036" y="123.98000440597534" width="24.535712957382202" height="183.82000818252564" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="332.99284291267395" y="166.4000062942505" width="24.535712957382202" height="141.4000062942505" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="360.52855587005615" y="194.68000755310058" width="24.535712957382202" height="113.1200050354004" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="402.4214107990265" y="95.70000314712524" width="24.535712957382202" height="212.10000944137573" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="429.9571237564087" y="123.98000440597534" width="24.535712957382202" height="183.82000818252564" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="471.849978685379" y="25" width="24.535712957382202" height="282.800012588501" rx="0" ry="0" fill="#0b62a4" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect>
+		<rect x="499.38569164276123" y="53.28000125885009" width="24.535712957382202" height="254.52001132965088" rx="0" ry="0" fill="#7a92a3" stroke="none" style="fill-opacity: 1;" fill-opacity="1"></rect></svg><div class="morris-hover morris-default-style" style="left: 38.9143px; top: 136px; display: none;"><div class="morris-hover-row-label">2006</div><div class="morris-hover-point" style="color: #0b62a4">
+  Series A:
+  100
+</div><div class="morris-hover-point" style="color: #7a92a3">
+  Series B:
+  90
+</div></div></div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+                <!-- .col-lg-12-->
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                         Danh mục phụ
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tên danh mục phụ</th>
+                                            <th>Các danh mục con</th>
+                                            <th>Chức năng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                             <td>
+                                            	 <button type="button" class="btn btn-warning">Thêm</button>	
+                                                 <button type="button" class="btn btn-success">Sửa</button>
+                                                 <button type="button" class="btn btn-danger">Xóa</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col.lg-12-->
+                <!-- .col-lg-12-->
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Các danh mục diễn đàn
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Mục thảo luận</th>
+                                            <th>Chức năng</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>
+                                            	 <button type="button" class="btn btn-warning">Thêm</button>	
+                                                 <button type="button" class="btn btn-success">Sửa</button>
+                                                 <button type="button" class="btn btn-danger">Xóa</button>
+                                            </td>
+                                            
+                                        </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col.lg-12-->
+                <!-- .col-lg-12-->
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Danh sách  người dùng  
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tài khoản</th>
+                                            <th>Mật khẩu</th>
+                                            <th>Email đăng ký</th>
+                                            <th>Ngày đăng ký</th>
+                                            <th>Quyền hạn</th>
+                                            <th>Chức năng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>
+                                            	 <button type="button" class="btn btn-success">Sửa</button>
+                                                 <button type="button" class="btn btn-danger">Xóa</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col.lg-12-->
+                
+                
+            </div>
+            <!-- /.row -->
+            <!-- /.row -->
+           
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+        
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
