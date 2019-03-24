@@ -23,6 +23,9 @@
   	<div class="input-group">
   		<button type="submit" class="btn" name="login_user" >Đăng nhập</button>
   	</div>
+  	<p>
+  		Bạn chưa có tài khoản? <a href="register.php">Đăng ký</a>
+  	</p>
   </form>
   </div>
 </body>
